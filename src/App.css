@@ -1,0 +1,16 @@
+.app {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 327px;
+    height: 360px;
+    background: radial-gradient(98.96% 98.96% at 50% 0%,
+            #232a34 0%,
+            #181e27 100%);
+    border: 2px solid red;
+    border-radius: 15px;
+}

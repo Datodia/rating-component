@@ -1,0 +1,14 @@
+.wrapper {
+    display: flex;
+    gap: 17px;
+    margin: 14px 24px 24px 24px;
+}
+
+.button {
+    width: 42px;
+    height: 42px;
+    background-color: var(--darkBlue);
+    border: none;
+    border-radius: 50%;
+    color: var(--white);
+}

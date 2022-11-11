@@ -1,10 +1,15 @@
 import './App.css';
+import { Main } from './components/Main/Main';
+import { Thanks } from './components/Thanks/Thanks';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello world</h1>
-      <img src='assets/star.svg' />
+    <div className="app">
+      <div className='card'>
+        <Main />
+        <Thanks />
+      </div>
+
     </div>
   );
 }
