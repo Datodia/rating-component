@@ -2,15 +2,10 @@ import React from 'react'
 import styles from './Button.module.css'
 
 
-export const Button = () => {
-
+export const Button = (props) => {
     return (
-        <div className={styles.wrapper}>
-            <button className={styles.button}>1</button>
-            <button className={styles.button}>1</button>
-            <button className={styles.button}>1</button>
-            <button className={styles.button}>1</button>
-            <button className={styles.button}>1</button>
+        <div >
+            <button onClick={props.onClick} className={styles.button}>{props.value}</button>
         </div>
     )
 }

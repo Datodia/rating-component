@@ -12,3 +12,7 @@
     border-radius: 50%;
     color: var(--white);
 }
+
+button:focus {
+    background-color: var(--lightGrey);
+}

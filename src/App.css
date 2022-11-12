@@ -14,3 +14,15 @@
     border: 2px solid red;
     border-radius: 15px;
 }
+
+.submit {
+    width: 279px;
+    height: 45px;
+    background-color: var(--orange);
+    border-radius: 22px;
+    border: none;
+    color: var(--white);
+    font-family: 'Overpass';
+    font-size: 14px;
+    margin: 24px 24px 32px 24px;
+}
