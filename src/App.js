@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import './App.css';
 import { Button } from './components/Button/Button';
-import { Main } from './components/Main/Main';
 import { Star } from './components/Star/Star';
 import { Text } from './components/Text/Text';
 import { Thanks } from './components/Thanks/Thanks';
@@ -55,7 +54,7 @@ function App() {
         <div style={{
           display: 'flex',
           gap: "17px",
-          margin: "24px 24px 24px 24px"
+          margin: "32px 32px 20px 32px"
         }}>
           {buttonArr.map((elem) => {
             return <Button active={elem.isClicked} onClick={() => handleClick(elem)} value={elem.value} />
