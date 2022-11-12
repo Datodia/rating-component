@@ -31,18 +31,22 @@ function App() {
     }
   ]
 
-  const [isActive, setIsActive] = useState(false)
+  const [show, setShow] = useState(true)
   const [rate, setRate] = useState()
 
   const handleClick = (e) => {
     setRate(e.value)
   }
+  const handleShow = () => {
+    { rate && setShow(false) }
+  }
 
 
 
   return (
+
     <div className="app">
-      <div className='card'>
+      {show ? <div className='card'>
         <Star />
         <Text
           title={'How did we do?'}
@@ -58,11 +62,12 @@ function App() {
           })}
         </div>
         <div>
-          <button className='submit'>Sumbit</button>
+          <button className='submit' onClick={handleShow}>Sumbit</button>
         </div>
-
-      </div>
-
+      </div> :
+        <div className='card'>
+          <Thanks rate={rate} />
+        </div>}
     </div>
   );
 }
