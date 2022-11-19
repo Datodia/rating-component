@@ -7,37 +7,18 @@ import { Thanks } from './components/Thanks/Thanks';
 
 function App() {
 
-  const buttonArr = [
-    {
-      value: 1,
-      isClicked: false
-    },
-    {
-      value: 2,
-      isClicked: true
-    },
-    {
-      value: 3,
-      isClicked: false
-    },
-    {
-      value: 4,
-      isClicked: false
-    },
-    {
-      value: 5,
-      isClicked: false
-    }
-  ]
-
+  const buttonArr = [1, 2, 3, 4, 5]
+  const [active, setActive] = useState()
   const [show, setShow] = useState(true)
   const [rate, setRate] = useState()
 
   const handleClick = (e) => {
-    setRate(e.value)
+    setRate(e)
+    setActive(e)
   }
   const handleShow = () => {
     { rate && setShow(false) }
+
   }
 
 
@@ -57,7 +38,7 @@ function App() {
           margin: "32px 32px 20px 32px"
         }}>
           {buttonArr.map((elem) => {
-            return <Button active={elem.isClicked} onClick={() => handleClick(elem)} value={elem.value} />
+            return <Button active={active} onClick={() => handleClick(elem)} value={elem} />
           })}
         </div>
         <div>
