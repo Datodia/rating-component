@@ -11,9 +11,6 @@
     background-color: var(--orange);
 }
 
-button:focus {
-    background-color: var(--lightGrey);
-}
 
 @media screen and (min-width: 700px) {
     .button {
